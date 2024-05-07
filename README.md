@@ -50,10 +50,9 @@ with open(csv_file, 'r') as file:
         full_image_with_boxes = draw_boxes(image, boxes)
         full_image_with_boxes.save(os.path.join(output_dir, f"full_{image_name}"))
 ```
-
-        ##HISTOGRAM
-        ```
-        import numpy as np
+##HISTOGRAM
+```
+import numpy as np
 import cv2 as cv
 from matplotlib import pyplot as plt
  
@@ -76,10 +75,10 @@ for i in num:
     sum = previousNum + i
     print('Current Number '+ str(i) + 'Previous Number ' + str(previousNum) + 'is ' + str(sum))
     previousNum=i
-    ```
+```
 
-    ##WEBCAM
-    ```
+##WEBCAM
+```
     # import the opencv library 
 import cv2 
   

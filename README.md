@@ -39,8 +39,6 @@ Inline `code`
 `histogram of an image`
 `Indented code`
 
-
-
 ```
 import numpy as np
 import cv2 as cv
@@ -65,7 +63,11 @@ assert img is not None, "file could not be read, check with os.path.exists()"
  
 plt.show()
 
+## Output image
+![Screenshot from 2024-05-08 11-27-25](https://github.com/rekhahabshipuram/rekha/assets/169051921/b9520acb-58f0-4f81-858f-b118c212a837)
+
 ```
+
 
 
 

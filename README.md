@@ -154,7 +154,34 @@ with open(csv_file, 'r') as file:
 ## Output Image
 ![0_7622202030987_f306535d741c9148dc458acbbc887243_L_487](https://github.com/rekhahabshipuram/rekha/assets/169051921/e7fa11ec-6ee7-46f5-8c4c-34b3905dddce)
         
-        
+
+# ITERATION
+
+The process of doing something again and again, usually to improve it, or one of the times you do it
+
+**Example**
+![Iteration-Maths-practice-question-1](https://github.com/rekhahabshipuram/rekha/assets/169051921/5ab53fbc-1543-47b8-b100-907febb88dd0)
+
+## Links
+[link list](https://www.w3schools.com/python/python_lists.asp)
+
+
+
+## code
+
+num = list(range(10))
+
+previousNum = 0
+
+for i in num:
+
+    sum = previousNum + i
+    print('Current Number '+ str(i) + 'Previous Number ' + str(previousNum) + 'is ' + str(sum))
+    previousNum=i
+    
+## output 
+
+![Screenshot from 2024-05-08 13-28-23](https://github.com/rekhahabshipuram/rekha/assets/169051921/a91cb5ba-6627-47d1-9c15-2fa486965365)
 
 
 

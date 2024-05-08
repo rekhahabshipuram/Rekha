@@ -59,4 +59,102 @@ plt.show()
 ![Screenshot from 2024-05-08 11-27-25](https://github.com/rekhahabshipuram/rekha/assets/169051921/b9520acb-58f0-4f81-858f-b118c212a837)
 
 ```
+# BOUNDING BOX
+
+A rectangular outline drawn around an object or a region of interest within an image
+
+## Libraries
+
+**import os**
+
+import os manages all of the other application programs in a computer.
+
+**pillow**
+
+#pip install pillow
+
+
+**import csv**
+
+The so-called CSV (Comma Separated Values) format is the most common import and export format for spreadsheets and databases.
+
+
+## Input image
+![7622202030987_f306535d741c9148dc458acbbc887243_L_487](https://github.com/rekhahabshipuram/rekha/assets/169051921/e52d351a-5742-4a97-8200-b380f8ac2acb)
+
+
+## Links
+[link functions](https://www.geeksforgeeks.org/python-functions/)
+
+
+# Code
+
+import os
+
+import csv
+
+from PIL import Image, ImageDraw
+
+
+csv_file = "/home/rekha-habshipuram/Downloads/7622202030987_bounding_box.csv"
+
+image_dir = "/home/rekha-habshipuram/Downloads/7622202030987"
+
+output_dir = "/home/rekha-habshipuram/Downloads/7622202030987_with_boxes"
+
+
+os.makedirs(output_dir, exist_ok=True)
+
+
+def draw_boxes(image, boxes):
+
+    draw = ImageDraw.Draw(image)
+    for box in boxes:
+        left = int(box['left'])
+        top = int(box['top'])
+        right = int(box['right'])
+        bottom = int(box['bottom'])
+        draw.rectangle([left, top, right, bottom], outline="red")
+    return image
+
+
+def crop_image(image, boxes):
+
+    cropped_images = []
+    for box in boxes:
+        left = int(box['left'])
+        top = int(box['top'])
+        right = int(box['right'])
+        bottom = int(box['bottom'])
+        cropped_img = image.crop((left, top, right, bottom))
+        cropped_images.append(cropped_img)
+    return cropped_images
+
+
+with open(csv_file, 'r') as file:
+
+    csv_reader = csv.DictReader(file)
+    for row in csv_reader:
+        image_name = row['filename']
+        image_path = os.path.join(image_dir, image_name)
+        output_path = os.path.join(output_dir, image_name)
+        image = Image.open(image_path)
+        boxes = [{'left': row['xmin'], 'top': row['ymin'], 'right': row['xmax'], 'bottom': row['ymax']}]
+        cropped_images = crop_image(image, boxes)
+        for i, cropped_img in enumerate(cropped_images):
+            cropped_img.save(os.path.join(output_dir, f"{i}_{image_name}"))  
+        full_image_with_boxes = draw_boxes(image, boxes)
+        full_image_with_boxes.save(os.path.join(output_dir, f"full_{image_name}"))
+        ```
+        
+        
+## Output Image
+![0_7622202030987_f306535d741c9148dc458acbbc887243_L_487](https://github.com/rekhahabshipuram/rekha/assets/169051921/e7fa11ec-6ee7-46f5-8c4c-34b3905dddce)
+        
+        
+
+
+
+
+
 

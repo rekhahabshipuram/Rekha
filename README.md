@@ -28,6 +28,8 @@ In an image processing context, the histogram of an image normally refers to a h
 
 [link histogram](https://en.wikipedia.org/wiki/Image_histogram)
 
+## Input image
+![dogs](https://github.com/rekhahabshipuram/rekha/assets/169051921/64506632-e004-47b9-ad39-1b2d2c471860)
 
 
 
@@ -62,7 +64,9 @@ assert img is not None, "file could not be read, check with os.path.exists()"
  plt.xlim([0,256])
  
 plt.show()
+
 ```
+
 
 
 

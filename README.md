@@ -128,7 +128,7 @@ def crop_image(image, boxes):
         cropped_images.append(cropped_img)
     return cropped_images
 
-    
+   ![full_7622202030987_f306535d741c9148dc458acbbc887243_L_487](https://github.com/rekhahabshipuram/rekha/assets/169051921/91d8055c-d15f-4c65-9d5c-d503900679d5) 
 
 
 with open(csv_file, 'r') as file:

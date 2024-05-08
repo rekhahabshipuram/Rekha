@@ -2,6 +2,7 @@
 
 In an image processing context, the histogram of an image normally refers to a histogram of the pixel intensity values. This histogram is a graph showing the number of pixels in an image at each different intensity value found in that image.
 
+
 ## Library info
 
 | Library | Description | represent |
@@ -61,6 +62,8 @@ plt.show()
 
 # BOUDING BOX
  rectangular outline drawn around an object or a region of interest within an image
+ 
+ ![643d3093b12eb54ce86904d3_624ef34](https://github.com/rekhahabshipuram/rekha/assets/169051921/9486a901-fa3c-40fb-b145-ecc0dd079181)
 
 ## Libraries
 

@@ -183,6 +183,57 @@ for i in num:
 
 ![Screenshot from 2024-05-08 13-28-23](https://github.com/rekhahabshipuram/rekha/assets/169051921/a91cb5ba-6627-47d1-9c15-2fa486965365)
 
+# WEBCAM
+
++ A webcam is a digital camera that captures video and audio data and transmits it in real-time over the internet. It is commonly used for video conferencing, live streaming, online meetings, and recording videos.
+
+## Libraries
+
+ **Opencv**
+ 
++ OpenCV is a huge open-source library for computer vision, machine learning, and image processing. 
++ OpenCV is a great tool for image processing and performing computer vision tasks. It is an open-source library that can be used to perform tasks like face detection, objection tracking.
++ import cv2
+
+## Installation
+$ pip install opencv
+
+
+## code
+
+#import the opencv library 
+import cv2 
+  
+  
+#define a video capture object 
+vid = cv2.VideoCapture(0) 
+  
+while(True): 
+      
+    # Capture the video frame 
+    # by frame 
+    ret, frame = vid.read() 
+  
+    # Display the resulting frame 
+    cv2.imshow('frame', frame) 
+      
+    # the 'q' button is set as the 
+    # quitting button you may use any 
+    # desired button of your choice 
+    if cv2.waitKey(1) & 0xFF == ord('q'): 
+        break
+  
+#After the loop release the cap object 
+vid.release() 
+
+#Destroy all the windows 
+
+cv2.destroyAllWindows()
+
+## Webcam video
+
+
+
 
 
 

@@ -11,14 +11,6 @@ In an image processing context, the histogram of an image normally refers to a h
 | matplotlib | Matplotlib in Python is an excellent tool for data visualization because it provides an easy way to view and interpret data. | from matplotlib import pyplot as plt 
 
 
-## Tables
-
-| Library | Description | represent |
-| ------- | ------------| --------- |
-| numpy   |NumPy can be used to perform a wide variety of mathematical operations on arrays.| import numpy as np
-| Opencv  | OpenCV is a great tool for image processing and performing computer vision tasks. | import cv2 as cv
-| matplotlib | Matplotlib in Python is an excellent tool for data visualization because it provides an easy way to view and interpret data. | from matplotlib import pyplot as plt 
-
 
 
 ## Links

@@ -58,10 +58,9 @@ plt.show()
 ## Output image
 ![Screenshot from 2024-05-08 11-27-25](https://github.com/rekhahabshipuram/rekha/assets/169051921/b9520acb-58f0-4f81-858f-b118c212a837)
 
-```
-# BOUNDING BOX
 
-A rectangular outline drawn around an object or a region of interest within an image
+# BOUDING BOX
+ rectangular outline drawn around an object or a region of interest within an image
 
 ## Libraries
 
@@ -77,7 +76,6 @@ import os manages all of the other application programs in a computer.
 **import csv**
 
 The so-called CSV (Comma Separated Values) format is the most common import and export format for spreadsheets and databases.
-
 
 ## Input image
 ![7622202030987_f306535d741c9148dc458acbbc887243_L_487](https://github.com/rekhahabshipuram/rekha/assets/169051921/e52d351a-5742-4a97-8200-b380f8ac2acb)
@@ -129,6 +127,8 @@ def crop_image(image, boxes):
         cropped_img = image.crop((left, top, right, bottom))
         cropped_images.append(cropped_img)
     return cropped_images
+
+    
 
 
 with open(csv_file, 'r') as file:

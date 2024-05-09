@@ -204,7 +204,7 @@ $ pip install opencv
 #import the opencv library 
 import cv2
 
-###Open the webcam
+#Open the webcam
 cap = cv2.VideoCapture(0)
 
 #Define the codec and create a VideoWriter object
@@ -229,7 +229,7 @@ while True:
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
-###Release everything when done
+#Release everything when done
 cap.release()
 
 out.release()

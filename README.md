@@ -204,12 +204,12 @@ $ pip install opencv
 #import the opencv library 
 import cv2
 
-# Open the webcam
+###Open the webcam
 cap = cv2.VideoCapture(0)
 
-# Define the codec and create a VideoWriter object
+#Define the codec and create a VideoWriter object
 fourcc = cv2.VideoWriter_fourcc(*'XVID')
-# Specify the full path where you want to save the video
+#Specify the full path where you want to save the video
 output_path = '/home/rekha-habshipuram/Documents/kushi/output.avi'
 out = cv2.VideoWriter(output_path, fourcc, 20.0, (640, 480))
 
@@ -229,8 +229,12 @@ while True:
     if cv2.waitKey(1) & 0xFF == ord('q'):
         break
 
-# Release everything when done
+###Release everything when done
 cap.release()
+
 out.release()
+
 cv2.destroyAllWindows()
+
 ## Output video
+https://github.com/rekhahabshipuram/rekha/assets/169051921/fdbf6573-ec11-4a8f-8c7a-e2429191b09b

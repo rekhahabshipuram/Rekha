@@ -202,9 +202,11 @@ $ pip install opencv
 ## code
 
 #import the opencv library 
+
 import cv2
 
 #Open the webcam
+
 cap = cv2.VideoCapture(0)
 
 #Define the codec and create a VideoWriter object
@@ -218,11 +220,13 @@ output_path = '/home/rekha-habshipuram/Documents/kushi/output.avi'
 out = cv2.VideoWriter(output_path, fourcc, 20.0, (640, 480))
 
 while True:
+
     # Capture frame-by-frame
     
     ret, frame = cap.read()
     
     if not ret:
+    
         break
 
     # Write the frame to the output video
